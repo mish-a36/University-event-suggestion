@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    overflow-x: hidden;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    background: #ff6600;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.hero {
+    background: url('../images/hero_About.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 15px 0;
+    text-align: center;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #ff6600;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a.active {
+    background: #ff6600;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+nav ul li a.active:hover {
+    background: white;
+    color: #ff6600;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-form h2 {
+    color: #ff6600;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #ff6600;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #ff6600;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    margin-left: 30px;
+}
+
+.contact-info h2 {
+    color: #ff6600;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+.map-container {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.map-container h2 {
+    color: #ff6600;
+    margin-bottom: 20px;
+}

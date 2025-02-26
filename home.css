@@ -1,0 +1,259 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+/* Header and Navigation */
+.hero {
+    background: url('../images/hero_section.jpg') no-repeat center center/cover;
+    height: 50vh;
+    text-align: center;
+    color: white;
+    padding: 80px 20px;
+    position: relative;
+}
+
+nav {
+    position: sticky;
+    margin-top: 4rem;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    text-align: center;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #ff6600;
+    border-radius: 5px;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+}
+
+.welcome h2 {
+    font-size: 42px;
+    color: #333;
+}
+
+.welcome p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Infinite Slider */
+.infinite-slider {
+    overflow: hidden;
+    background: #222;
+    color: white;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.slider-track {
+    display: inline-block;
+    animation: scroll 15s linear infinite;
+}
+
+.slide {
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 18px;
+}
+
+
+/* Keyframes for scrolling text */
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Upcoming Events */
+.events {
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+}
+
+.events h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Sports Categories */
+.sports-categories {
+    background: #ff6600;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.sports-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sport {
+    background: white;
+    color: #ff6600;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Latest News */
+.latest-news {
+    background: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.latest-news h2 {
+    font-size: 28px;
+}
+
+.latest-news ul {
+    list-style: none;
+    padding: 0;
+}
+
+.latest-news ul li {
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Testimonials */
+.testimonials {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.testimonial p {
+    font-size: 18px;
+}
+
+/* Call to Action */
+.cta {
+    background: #ff6600;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta .btn {
+    display: inline-block;
+    background: white;
+    color: #ff6600;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta .btn:hover {
+    background: #333;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    background: #111;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ccc;
+}

@@ -1,0 +1,254 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    overflow-x: hidden;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header */
+.hero {
+    background: url('../images/hero_About.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 15px 0;
+    text-align: center;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #ff6600;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a.active {
+    background: #ff6600;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+nav ul li a.active:hover {
+    background: white;
+    color: #ff6600;
+}
+
+/* Sections */
+section {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Scroll animation for sections */
+.show-section {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* History */
+.history {
+    background: #222;
+    color: white;
+    padding: 60px 20px;
+}
+
+.history-content {
+    max-width: 800px;
+    margin: auto;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.history ul {
+    text-align: left;
+    display: inline-block;
+}
+
+.history ul li {
+    font-size: 18px;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.history ul li:hover {
+    color: #ff6600;
+    transform: scale(1.05);
+}
+
+/* Facilities */
+.facilities {
+    background: #f8f9fa;
+}
+
+.facility-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.facility {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+.facility:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.facility img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Why Join */
+.why-join {
+    background: #ff6600;
+    color: white;
+    text-align: center;
+}
+
+.why-join ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-join ul li {
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.why-join ul li:hover {
+    transform: scale(1.05);
+    font-weight: bold;
+}
+
+/* Testimonials */
+.testimonials {
+    background: #333;
+    color: white;
+    text-align: center;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background: #111;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: #ff6600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff6600;
+    transform: scale(1.2);
+}
